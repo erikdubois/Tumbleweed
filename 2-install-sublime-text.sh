@@ -62,120 +62,31 @@
 
 
 
+wget wget https://download.sublimetext.com/sublime_text_3_build_3114_x64.tar.bz2
 
+tar -xjvf sublime_text_3_build_3114_x64.tar.bz2
 
+sudo mv ~/Tumbleweed/sublime_text_3/ /opt/sublime_text
 
-########################################
-########    A P P S  R E P O    ########
-########################################
+sudo ln -s /opt/sublime_text/sublime_text /bin/subl
 
+mkdir ~/.local/share/applications
 
 
 
-######## A C C E S S O R I E S #########
+cat << EOF > ~/.local/share/applications/sublime.desktop
+[Desktop Entry]
 
+Name=Sublime Text
+Exec=subl %F
+MimeType=text/plain;
+Terminal=false
+Type=Application
+Icon=sublime-text
+Categories=Utility;TextEditor;Development;
+EOF
 
-sudo zypper --non-interactive install -y variety
-
-
-######## D E V E L O P M E N T #########
-
-######## E D U C A T I O N     #########
-
-######## G A M E S             #########
-
-######## G R A P H I C S       #########
-
-
-sudo zypper --non-interactive install -y inkscape
-
-######## I N T E R N E T       #########
-
-
-
-
-# activate multilib in the pacman.conf
-sudo zypper --non-interactive install -y  skype
-
-######## M U L T I M E D I A   #########
-
-sudo zypper --non-interactive install -y vlc 
-
-sudo zypper --non-interactive install -y clementine
-
-sudo zypper --non-interactive install -y radiotray
-
-
-
-######## O F F I C E           #########
-
-
-
-
-
-######## S E T T I N G S       #########
-
-       # T H E M I N G #
-
-# Theme, icons, borders, cursors
-
-
-
-
-######## S Y S T E M           #########
-
-        # S Y S T E M  T O O L S # 
-
-# all kind of tools to get system information
-
-
-
-
-sudo zypper --non-interactive install -y git 
-
-
-
-
-numlockx on 
-
-sudo zypper --non-interactive install -y screenfetch
-
-#updatedb and locate
-sudo zypper --non-interactive install -y mlocate
-
-sudo zypper --non-interactive install -y hardinfo 
-
-
-
-
-
-        # S O U N D #
-
-
-
-        # A R C H I V E #
-
-
-
-
-        # F O N T S #
-
-
-
-        # U T I L I T I E S #
-
-
-
-        # P R I N T E R #
-
-
-
-        # N E T W O R K #
-
-
-
-
-
+rm sublime_text_3_build_3114_x64.tar.bz2
 echo "########################################"
 echo "########    T H E   E N D      #########"
 echo "########################################"
