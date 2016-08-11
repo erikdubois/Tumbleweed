@@ -61,13 +61,7 @@
 ##################################################################################################################
 
 
-sudo pacman -S base-devel --noconfirm
 
-
-# git push makes kwallet active
-# deactivate kwallet
-
-sudo pacman -S kwalletmanager --noconfirm
 
 
 
@@ -80,19 +74,13 @@ sudo pacman -S kwalletmanager --noconfirm
 
 ######## A C C E S S O R I E S #########
 
-#sudo pacman -S terminator --noconfirm
 
-#sudo pacman -S unclutter --noconfirm
 
-#sudo pacman -S ristretto --noconfirm
 
-#sudo pacman -S notify-osd --noconfirm
 
-#sudo pacman -S evince --noconfirm
+sudo zypper install variety -y
 
-#sudo pacman -S variety --noconfirm
-
-sudo pacman -S meld --noconfirm
+sudo zypper install meld --noconfirm
 
 ######## D E V E L O P M E N T #########
 
@@ -102,31 +90,31 @@ sudo pacman -S meld --noconfirm
 
 ######## G R A P H I C S       #########
 
-sudo pacman -S gimp --noconfirm
-sudo pacman -S inkscape --noconfirm
+sudo zypper install gimp --noconfirm
+sudo zypper install inkscape --noconfirm
 
 ######## I N T E R N E T       #########
 
-sudo pacman -S firefox --noconfirm
-#sudo pacman -S flashplugin --noconfirm
-#sudo pacman -S transmission-gtk  --noconfirm
-#sudo pacman -S filezilla --noconfirm
+sudo zypper install firefox --noconfirm
+#sudo zypper install flashplugin --noconfirm
+#sudo zypper install transmission-gtk  --noconfirm
+#sudo zypper install filezilla --noconfirm
 
 # activate multilib in the pacman.conf
-# sudo pacman -S skype
+# sudo zypper install skype
 
 ######## M U L T I M E D I A   #########
 
-sudo pacman -S vlc --noconfirm
+sudo zypper install vlc --noconfirm
 
-#sudo pacman -S clementine --noconfirm
+#sudo zypper install clementine --noconfirm
 
-#sudo pacman -S shotwell --noconfirm
+#sudo zypper install shotwell --noconfirm
 
 
 ######## O F F I C E           #########
 
-sudo pacman -S evolution --noconfirm
+sudo zypper install evolution --noconfirm
 
 
 
@@ -148,46 +136,46 @@ sudo pacman -S evolution --noconfirm
 
 
 
-sudo pacman -S git --noconfirm
+sudo zypper install git --noconfirm
 
-sudo pacman -S htop --noconfirm
+sudo zypper install htop --noconfirm
 
-sudo pacman -S wget  --noconfirm
+sudo zypper install wget  --noconfirm
 
-#sudo pacman -S sysstat  --noconfirm
+#sudo zypper install sysstat  --noconfirm
 
-#sudo pacman -S glances  --noconfirm
+#sudo zypper install glances  --noconfirm
 
 
 
 numlockx on 
 
-sudo pacman -S inxi  --noconfirm
+sudo zypper install inxi  --noconfirm
 
-#sudo pacman -S mesa-demos  --noconfirm
+#sudo zypper install mesa-demos  --noconfirm
 
-#sudo pacman -S net-tools  --noconfirm
+#sudo zypper install net-tools  --noconfirm
 
-#sudo pacman -S archey3  --noconfirm
+#sudo zypper install archey3  --noconfirm
 
 #updatedb and locate
-sudo pacman -S mlocate  --noconfirm
+sudo zypper install mlocate  --noconfirm
 
-#sudo pacman -S hardinfo --noconfirm
+#sudo zypper install hardinfo --noconfirm
 
 
 
 
 # monitor the GB/TB of your harddisk
 
-#sudo pacman -S baobab  --noconfirm
+#sudo zypper install baobab  --noconfirm
 
 # Monitor the partitions and format them
-# sudo pacman -S gparted --noconfirm
+# sudo zypper install gparted --noconfirm
 
 # download statistics
 
-#sudo pacman -S vnstat  --noconfirm
+#sudo zypper install vnstat  --noconfirm
 #systemctl enable vnstat
 #systemctl start vnstat
 
@@ -195,49 +183,49 @@ sudo pacman -S mlocate  --noconfirm
 
         # S O U N D #
 
-#sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol  --noconfirm
-#sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg  --noconfirm
+#sudo zypper install alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol  --noconfirm
+#sudo zypper install gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg  --noconfirm
 
 # for kazam
 
-#sudo pacman -S libsrtp --noconfirm
-#sudo pacman -S volumeicon --noconfirm
+#sudo zypper install libsrtp --noconfirm
+#sudo zypper install volumeicon --noconfirm
 
 
         # A R C H I V E #
 
-#sudo pacman -S file-roller  --noconfirm
+#sudo zypper install file-roller  --noconfirm
 
 # if you want  a wastbasket in thunar you better install this
 
-#sudo pacman -S gvfs   --noconfirm
+#sudo zypper install gvfs   --noconfirm
 
 
 # better search with catfish and dependancies - in depth string search
-#sudo pacman -S catfish --noconfirm
+#sudo zypper install catfish --noconfirm
 
-#sudo pacman -S findutils tracker strigi pinot --noconfirm
+#sudo zypper install findutils tracker strigi pinot --noconfirm
 
 
         # F O N T S #
 
-#sudo pacman -S ttf-ubuntu-font-family --noconfirm
+#sudo zypper install ttf-ubuntu-font-family --noconfirm
 
 
-#sudo pacman -S ttf-droid --noconfirm --noconfirm
-#sudo pacman -S ttf-inconsolata --noconfirm
-#sudo pacman -S ttf-google-fonts  --noconfirm
+#sudo zypper install ttf-droid --noconfirm --noconfirm
+#sudo zypper install ttf-inconsolata --noconfirm
+#sudo zypper install ttf-google-fonts  --noconfirm
 
-sudo pacman -S ttf-dejavu ttf-liberation --noconfirm
+sudo zypper install ttf-dejavu ttf-liberation --noconfirm
 
         # U T I L I T I E S #
 
-#sudo pacman -S gnome-disk-utility  --noconfirm
+#sudo zypper install gnome-disk-utility  --noconfirm
 
         # P R I N T E R #
 
-#sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm
-sudo pacman -S print-manager cups --noconfirm
+#sudo zypper install cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm
+sudo zypper install print-manager cups --noconfirm
 
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
@@ -247,12 +235,12 @@ systemctl start org.cups.cupsd.service
 
 
 
-#sudo pacman -S networkmanager --noconfirm
+#sudo zypper install networkmanager --noconfirm
 
 # if you want a networkmanager and applet mostly for laptop/wireless as
 # lan just works and gives no added value
 
-# sudo pacman -S network-manager-applet --noconfirm
+# sudo zypper install network-manager-applet --noconfirm
 
 
 

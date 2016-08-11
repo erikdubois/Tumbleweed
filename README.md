@@ -26,7 +26,28 @@ Update all software
 
     zypper update
 
+
     
+    
+# Variety
+
+Variety can be installed but you will have to use a work around.
+
+    zypper install variety -y
+
+Point the system to a folder that has now been created in pictures.
+
+![Screenshots](http://i.imgur.com/Ckp6yB8.png)
+
+
+
+
+
+
+
+
+
+
     
 Run the scripts...
 
