@@ -13,13 +13,21 @@ Sardi at [Sourceforge](https://sourceforge.net/projects/sardi/files/)
 
 # Installation of software
 
-Zypper and rpm can be used
+Zypper and rpm can be used to install software
 
-    zypper install screenfetch
+    zypper install screenfetch -y
+
+or remove software
+
+    zypper remove screenfetch
 
 
+Update all software
 
+    zypper update
 
+    
+    
 Run the scripts...
 
 
